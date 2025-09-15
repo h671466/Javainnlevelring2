@@ -10,25 +10,23 @@ Koden skal leveres via GitHub som beskrevet nedenfor og prosjektet er satt opp s
 
 Metodene i oppgavene nedenfor skal implementeres "fra bunden"  - og det er derfor **ikke lov** å bruke metoder som finnes i `Arrays`-klassen i Java.
 
-Før dere begynner anvefales det å se på Canvas siden for innleveringen som vla. inneholder en video med instruksjoner for hvordan dere kommer igang og hva som skal leveres.
-
 ### Oppgave 1: Clone start-kode
 
-Begynn med å opprette en kopi av denne oppbevaringsplassen ved å bruke *Use this template* (se øverste høyre hjørne på github-websiden). Du vil da få en kopi av oppbevaringsplassen med startkoden på din egen github konto. Du kan nå clone denne kopien ned på egen PC (bruk GitHub desktop). 
+Begynn med å opprette en kopi av denne oppbevaringsplassen ved å bruke *Use this template* (se øverste høyre hjørne på github-websiden). Du vil da få en kopi av oppbevaringsplassen med startkoden på din egen github konto. Du kan nå clone denne kopien ned på egen PC (bruk eks. GitHub desktop). 
 
-Det er kun *en person* i gruppen som skal utføre *Use as template* på startkoden. Den som har utført *Use as template* kan etterfølgende gi tilgang til sin lokale kopi av oppbevaringsplassen til de andre gruppe-medlemmer ved å bruke *Settings* og *Manage Access* på GitHub. De andre gruppemedlemmer kan etterfølgende klone oppbevaringsplassen ved å bruke Github Desktop. På denne måten vil alle gruppe-medlemmer jobbe på samme oppbevaringsplass og dele koden som implementeres.
+Det er kun *en person* i gruppen som skal utføre *Use as template* på startkoden. Den som har utført *Use as template* kan etterfølgende gi tilgang til sin lokale kopi av oppbevaringsplassen til de andre gruppe-medlemmer ved å bruke *Settings* og *Manage Access* på GitHub. De andre gruppemedlemmer kan etterfølgende klone oppbevaringsplassen ved å bruke Github Desktop. På denne måten vil alle gruppe-medlemmer jobbe på samme oppbevaringsplass på Github og dele koden som implementeres.
 
 ### Oppgave 2: Importe start-kode og enhetstester inn i Eclipse
 
-Start-koden ligger i et Eclipse-prosjekt og er organisert slik at bygge-systemet Maven automatisk kan brukes til å kompilere koden og kjøre test i GitHub-skyen. 
+Start-koden ligger i prosjekt og er organisert slik at bygge-systemet Maven automatisk kan brukes til å kompilere koden og kjøre test i GitHub-skyen. 
 
-Dere skal derfor bruke *Import -> Maven -> Existing Maven Projects* for å importere koden inn i Eclipse - og altså ikke importere som vanlig Eclipse-prosjekt.
+Dere skal derfor bruke *File* -> Open* og navigere ned i mappen dere dere klonet ned startkoden i Steg 1.
 
-Klassene `Tabeller.java` og `Matriser.java` inneholder starten på metodene dere skal implementere i oppgavene. Disse finnes under `src/main/java` i Maven-Eclipse-prosjektet.
+Klassene `Tabeller.java` og `Matriser.java` inneholder starten på metodene dere skal implementere i oppgavene. Disse finnes under `src/main/java` i prosjektet.
 
-Klassene `TabellerEnhetsTests.java` og `MatriserEnhetsTests.java` inneholder JUnit-enhettester som kan brukes til å teste implementasjon av metodene etterhvert som de implementeres. Disse finner du under `src/test/java` i Maven-Eclipse-prosjektet.
+Klassene `TabellerEnhetsTests.java` og `MatriserEnhetsTests.java` inneholder JUnit-enhettester som kan brukes til å teste implementasjon av metodene etterhvert som de implementeres. Disse finner du under `src/test/java` i prosjektet.
 
-Testene kan kjøres ved å høyre-klikke på filen som inneholder tester og velge `Run As -> JUnit Test`.
+Testene kan kjøres ved å dobbel-klikke play-ikonene som finnes ved siden av linjenumrene.
 
 ### Oppgave 3: Pushe code til Github 
 
