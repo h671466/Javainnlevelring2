@@ -6,7 +6,7 @@ Den obligatoriske innleveringen kan gjøres i **grupper** med opptil **3 persone
 
 Oppgaven omhandler metoder for en- og to-dimensjonale tabeller. 
 
-Koden skal leveres via GitHub som beskrevet nedenfor og prosjektet er satt opp slik at koden dere leverer inn testes automatisk ved å bruke *Actions* i GitHub sky-tjenesten. På den måden blir innleveringen enklere å rette.
+Koden skal leveres via GitHub som beskrevet nedenfor og prosjektet er satt opp slik at koden dere leverer inn testes automatisk ved å bruke *Actions* i GitHub sky-tjenesten. På den måden blir innleveringen enklere å rette. Dette er samme fremgånsmåte som vi gikk igjennom på forelesning og IntelliJ og softwareutvikling.
 
 Metodene i oppgavene nedenfor skal implementeres "fra bunden"  - og det er derfor **ikke lov** å bruke metoder som finnes i `Arrays`-klassen i Java.
 
@@ -18,9 +18,9 @@ Det er kun *en person* i gruppen som skal utføre *Use as template* på startkod
 
 ### Oppgave 2: Importe start-kode og enhetstester inn i Eclipse
 
-Start-koden ligger i prosjekt og er organisert slik at bygge-systemet Maven automatisk kan brukes til å kompilere koden og kjøre test i GitHub-skyen. 
+Start-koden ligger i prosjekt og er organisert slik bygge-systemet Maven automatisk kan brukes til å kompilere koden og kjøre test i GitHub-skyen. 
 
-Dere skal derfor bruke *File* -> Open* og navigere ned i mappen dere dere klonet ned startkoden i Steg 1.
+Dere skal derfor bruke *File* -> Open* i IntelliJ og navigere ned i mappen der dere klonet ned startkoden i Steg 1.
 
 Klassene `Tabeller.java` og `Matriser.java` inneholder starten på metodene dere skal implementere i oppgavene. Disse finnes under `src/main/java` i prosjektet.
 
@@ -185,7 +185,7 @@ som kan multiplisere to matriser. Test metoden. Vi har lov å multiplisere to ma
 
 ### Oppgave 7: Sjekk at alle metoder fungerer og push til GitHub
 
-Når alle metoder i oppgave 4 og 5 (og evt. 6) fungerer dvs. alle enhets-test passerer, da kan må du huske å pushe koden opp på GitHub. 
+Når alle metoder i oppgave 4 og 5 (og evt. 6) fungerer dvs. alle enhets-test passerer, da må dere huske å pushe koden opp på GitHub. 
 
 Når koden er pushet opp på GitHub Gå inn under *Actions*. Sjekk at den automatisk testen som blir kjørt når du legger opp koden har et grønt tick på seg. 
 
