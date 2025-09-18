@@ -16,7 +16,7 @@ Begynn med å opprette en kopi av denne oppbevaringsplassen ved å bruke *Use th
 
 Det er kun *en person* i gruppen som skal utføre *Use as template* på startkoden. Den som har utført *Use as template* kan etterfølgende gi tilgang til sin lokale kopi av oppbevaringsplassen til de andre gruppe-medlemmer ved å bruke *Settings* og *Manage Access* på GitHub. De andre gruppemedlemmer kan etterfølgende klone oppbevaringsplassen ved å bruke Github Desktop. På denne måten vil alle gruppe-medlemmer jobbe på samme oppbevaringsplass på Github og dele koden som implementeres.
 
-### Oppgave 2: Importe start-kode og enhetstester inn i Eclipse
+### Oppgave 2: Importere start-kode og enhetstester inn i IntelliJ
 
 Start-koden ligger i prosjekt og er organisert slik bygge-systemet Maven automatisk kan brukes til å kompilere koden og kjøre test i GitHub-skyen. 
 
