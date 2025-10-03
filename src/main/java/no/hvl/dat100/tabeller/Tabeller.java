@@ -7,7 +7,7 @@ public class Tabeller {
 
 		StringBuilder tablestring = new StringBuilder("(");
 		for (int j : tabell) {
-			tablestring.append(tabell[j]).append(",");
+			tablestring.append(j).append(",");
 		}
 
 		System.out.println(tablestring + ")");
@@ -17,18 +17,25 @@ public class Tabeller {
 	public static String tilStreng(int[] tabell) {
 
 		StringBuilder tablestring = new StringBuilder("[");
+		int i = 0;
 		for (int j : tabell) {
-			tablestring.append(tabell[j]).append(",");
+			i++;
+			tablestring.append(j);
+			if (i < tabell.length) {
+				tablestring.append(",");
+		}
+
 		}
 		tablestring.append("]");
 		return tablestring.toString();
+
 	}
 
 	// c)
 	public static int summer(int[] tabell) {
 		int resultat = 0;
 		for (int j : tabell) {
-			resultat += tabell[j];
+			resultat += j;
 		}
 		return resultat;
 	}
@@ -37,7 +44,7 @@ public class Tabeller {
 	public static boolean finnesTall(int[] tabell, int tall) {
 
 		for (int j : tabell) {
-			if (tabell[j] == tall) {
+			if (j == tall) {
 				return true;
 			}
 		}
@@ -47,9 +54,9 @@ public class Tabeller {
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
 
-		for (int j : tabell) {
-			if (tabell[j] == tall) {
-				return j;
+		for (int i = 0; i < tabell.length; i++) {
+			if (tabell[i] == tall) {
+				return i;  // ✅ Return the index, not the value
 			}
 		}
 		return -1;
@@ -73,10 +80,10 @@ public class Tabeller {
 		Integer ForrigeTall = null;
 		for (int j : tabell) {
 
-			if (ForrigeTall != null && ForrigeTall > tabell[j]) {
+			if (ForrigeTall != null && ForrigeTall > j) {
 				return false;
 			}
-			ForrigeTall = tabell[j];
+			ForrigeTall = j;
 		}
 		return true;
 	}
@@ -84,19 +91,20 @@ public class Tabeller {
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		// kan gjerne være mer spesifik på hvordan den ska være satt sammen feks blandet anenhver eller etterhverandre :)
-		int Lengde1 = tabell1.length;
-		int Lengde2 = tabell2.length;
-		int SattSammen[] = new int[Lengde1 + Lengde2];
+		int lengde1 = tabell1.length;
+		int lengde2 = tabell2.length;
+		int[] sattSammen = new int[lengde1 + lengde2];
 
-		for (int j : tabell1) {
-			SattSammen[j] = tabell1[j];
+
+		for (int i = 0; i < lengde1; i++) {
+			sattSammen[i] = tabell1[i];
 		}
 
-		for (int j : tabell2){
-			SattSammen[j + tabell1.length] = tabell2[j];
+
+		for (int i = 0; i < lengde2; i++) {
+			sattSammen[i + lengde1] = tabell2[i];
 		}
 
-		return SattSammen;
+		return sattSammen;
 	}
 }

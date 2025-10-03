@@ -16,10 +16,10 @@ public class Matriser {
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
-		StringBuilder MatrixString = new StringBuilder();
+		StringBuilder MatrixString = new StringBuilder("[");
 		for (int row = 0; row < matrise.length; row++ ){
 			for (int col = 0; col < matrise[row].length; col++){
-				MatrixString.append(matrise[row][col]);
+				MatrixString.append(matrise[row][col]).append(" ");
 			}
 			MatrixString.append("\n");
 		}
